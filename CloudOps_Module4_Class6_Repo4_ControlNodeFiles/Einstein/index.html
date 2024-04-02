@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <script>
+    // Function to get the current date and time
+    function getCurrentDateTime() {
+      var currentDateTime = new Date();
+      return currentDateTime.toLocaleString();
+    }
+    
+    // Function to get the server name
+    function getServerName() {
+      return window.location.hostname;
+    }
+    
+    // Update the elements with date, time, and server name
+    function updateDateTimeAndServerName() {
+      document.getElementById("datetime").textContent = getCurrentDateTime();
+      document.getElementById("servername").textContent = getServerName();
+    }
+    
+    // Call the update function when the page loads
+    window.onload = function() {
+      updateDateTimeAndServerName();
+    };
+  </script>
+</head>
+<body>
+	<small>
+		<h3 align="left">Date, Time, and Server Name</h3>
+		<p align="left">Current Date and Time: <span id="datetime"></span></p>
+		<p align="left">Server Name: <span id="servername"></span></p>
+  	</small>
+	<br><br><br>
+</body>
+
+
+
+  <title>Top 10 Albert Einstein Quotes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 300px;
+            margin-top: 20px;
+        }
+        .quote {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Top 10 Albert Einstein Quotes</h1>
+    <div class="quote">
+        <p>"Imagination is more important than knowledge."</p>
+    </div>
+    <div class="quote">
+        <p>"The only source of knowledge is experience."</p>
+    </div>
+    <div class="quote">
+        <p>"Strive not to be a success, but rather to be of value."</p>
+    </div>
+    <div class="quote">
+        <p>"The true sign of intelligence is not knowledge but imagination."</p>
+    </div>
+    <div class="quote">
+        <p>"Logic will get you from A to B. Imagination will take you everywhere."</p>
+    </div>
+    <div class="quote">
+        <p>"The difference between stupidity and genius is that genius has its limits."</p>
+    </div>
+    <div class="quote">
+        <p>"Education is what remains after one has forgotten what one has learned in school."</p>
+    </div>
+    <div class="quote">
+        <p>"In the middle of difficulty lies opportunity."</p>
+    </div>
+    <div class="quote">
+        <p>"Look deep into nature, and then you will understand everything better."</p>
+    </div>
+    <div class="quote">
+        <p>"Imagination is everything. It is the preview of life's coming attractions."</p>
+    </div>
+    <img src="einstein.jpg" alt="Albert Einstein with his tongue sticking out">
+    
+</body>
+</html>
